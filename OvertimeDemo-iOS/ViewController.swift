@@ -6,12 +6,22 @@
 //
 
 import UIKit
+import PureLayout
 
 class ViewController: UIViewController {
 
+    private lazy var tableView: UITableView = {
+        let view = UITableView()
+        return view
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        view.backgroundColor = .white        
+        
+        view.addSubview(tableView)
+        tableView.autoPinEdgesToSuperviewEdges()
     }
 
 

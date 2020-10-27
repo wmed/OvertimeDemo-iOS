@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		5D972FDC25489532009A36BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D972FDB25489532009A36BD /* AppDelegate.swift */; };
-		5D972FDE25489532009A36BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D972FDD25489532009A36BD /* SceneDelegate.swift */; };
 		5D972FE025489532009A36BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D972FDF25489532009A36BD /* ViewController.swift */; };
-		5D972FE325489532009A36BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D972FE125489532009A36BD /* Main.storyboard */; };
 		5D972FE525489534009A36BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D972FE425489534009A36BD /* Assets.xcassets */; };
 		5D972FE825489534009A36BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D972FE625489534009A36BD /* LaunchScreen.storyboard */; };
+		77AC2DACFF5A97CA639EF7D1 /* Pods_OvertimeDemo_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B98B205BE9042A13C6A0BE /* Pods_OvertimeDemo_iOS.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		076E84E7AAC215B7252D1EBD /* Pods-OvertimeDemo-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OvertimeDemo-iOS.release.xcconfig"; path = "Target Support Files/Pods-OvertimeDemo-iOS/Pods-OvertimeDemo-iOS.release.xcconfig"; sourceTree = "<group>"; };
+		319ACE85BE2FB3BA62866139 /* Pods-OvertimeDemo-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OvertimeDemo-iOS.debug.xcconfig"; path = "Target Support Files/Pods-OvertimeDemo-iOS/Pods-OvertimeDemo-iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		5D972FD825489532009A36BD /* OvertimeDemo-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OvertimeDemo-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D972FDB25489532009A36BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D972FDD25489532009A36BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5D972FDF25489532009A36BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D972FE225489532009A36BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D972FE425489534009A36BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D972FE725489534009A36BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D972FE925489534009A36BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64B98B205BE9042A13C6A0BE /* Pods_OvertimeDemo_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OvertimeDemo_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +31,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77AC2DACFF5A97CA639EF7D1 /* Pods_OvertimeDemo_iOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29C2DB9D49D2D656EB072399 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				319ACE85BE2FB3BA62866139 /* Pods-OvertimeDemo-iOS.debug.xcconfig */,
+				076E84E7AAC215B7252D1EBD /* Pods-OvertimeDemo-iOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5D972FCF25489532009A36BD = {
 			isa = PBXGroup;
 			children = (
 				5D972FDA25489532009A36BD /* OvertimeDemo-iOS */,
 				5D972FD925489532009A36BD /* Products */,
+				29C2DB9D49D2D656EB072399 /* Pods */,
+				E7646EE240C07F8169DFFFEB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +70,20 @@
 			isa = PBXGroup;
 			children = (
 				5D972FDB25489532009A36BD /* AppDelegate.swift */,
-				5D972FDD25489532009A36BD /* SceneDelegate.swift */,
 				5D972FDF25489532009A36BD /* ViewController.swift */,
-				5D972FE125489532009A36BD /* Main.storyboard */,
 				5D972FE425489534009A36BD /* Assets.xcassets */,
 				5D972FE625489534009A36BD /* LaunchScreen.storyboard */,
 				5D972FE925489534009A36BD /* Info.plist */,
 			);
 			path = "OvertimeDemo-iOS";
+			sourceTree = "<group>";
+		};
+		E7646EE240C07F8169DFFFEB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				64B98B205BE9042A13C6A0BE /* Pods_OvertimeDemo_iOS.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +93,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5D972FEC25489534009A36BD /* Build configuration list for PBXNativeTarget "OvertimeDemo-iOS" */;
 			buildPhases = (
+				5720CB87BD5D512788C2A334 /* [CP] Check Pods Manifest.lock */,
 				5D972FD425489532009A36BD /* Sources */,
 				5D972FD525489532009A36BD /* Frameworks */,
 				5D972FD625489532009A36BD /* Resources */,
+				A49D622A62309D1E076DE8BE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,11 +147,52 @@
 			files = (
 				5D972FE825489534009A36BD /* LaunchScreen.storyboard in Resources */,
 				5D972FE525489534009A36BD /* Assets.xcassets in Resources */,
-				5D972FE325489532009A36BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5720CB87BD5D512788C2A334 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OvertimeDemo-iOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A49D622A62309D1E076DE8BE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OvertimeDemo-iOS/Pods-OvertimeDemo-iOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OvertimeDemo-iOS/Pods-OvertimeDemo-iOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OvertimeDemo-iOS/Pods-OvertimeDemo-iOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5D972FD425489532009A36BD /* Sources */ = {
@@ -139,21 +201,12 @@
 			files = (
 				5D972FE025489532009A36BD /* ViewController.swift in Sources */,
 				5D972FDC25489532009A36BD /* AppDelegate.swift in Sources */,
-				5D972FDE25489532009A36BD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5D972FE125489532009A36BD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5D972FE225489532009A36BD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		5D972FE625489534009A36BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -283,6 +336,7 @@
 		};
 		5D972FED25489534009A36BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 319ACE85BE2FB3BA62866139 /* Pods-OvertimeDemo-iOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,12 +349,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tv.overtime.OvertimeDemo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5D972FEE25489534009A36BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 076E84E7AAC215B7252D1EBD /* Pods-OvertimeDemo-iOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -313,7 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "tv.overtime.OvertimeDemo-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
